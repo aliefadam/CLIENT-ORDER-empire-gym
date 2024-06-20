@@ -1,0 +1,150 @@
+@import url("style.css");
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    padding: 10px 160px;
+    height: calc(100vh - 83px - 64px);
+}
+
+.alert {
+    background-color: var(--biru);
+    color: white;
+    font-size: 15px;
+    padding: 10px 16px;
+}
+
+.box-card {
+    height: calc(100% - 25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.box-card .card {
+    width: 284px;
+    height: 400px;
+    border: 1px solid var(--merah);
+    border-radius: 20px;
+    padding: 20px 41px;
+    position: relative;
+}
+
+.box-card .card .top {
+    border-bottom: 3px dashed var(--merah);
+    padding-bottom: 34px;
+}
+
+.box-card .card .bottom {
+    padding: 15px 20px;
+    height: 228px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-card .card .bottom ul li {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: var(--merah);
+}
+
+.box-card .card .bottom a {
+    margin-top: 20px;
+    height: fit-content;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #e6001c, #ffed4a);
+}
+
+.box-card .card .bottom a span {
+    color: white;
+}
+
+.box-card .card .top h1 {
+    font-size: 24px;
+    color: var(--merah);
+    text-align: center;
+}
+
+.box-card .card .top span:not(.bulan) {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 36px;
+    color: var(--merah);
+    display: block;
+}
+
+.box-card .card .top span.bulan {
+    margin-top: 5px;
+    font-size: 20px;
+    color: var(--merah);
+    display: block;
+}
+
+.box-card .card .circle-left {
+    background-color: white;
+    border-right: 2px solid var(--merah);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 130px;
+    left: -22px;
+}
+
+.box-card .card .circle-right {
+    background-color: white;
+    border-left: 2px solid var(--merah);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 130px;
+    right: -22px;
+}
+
+.box-card .card:hover {
+    border: 1px solid white;
+    background-image: linear-gradient(to top, #e6001c, #ebd512);
+}
+
+.box-card .card:hover .top {
+    border-bottom: 3px dashed white;
+}
+
+.box-card .card:hover .top h1,
+.box-card .card:hover .top span {
+    color: white;
+}
+
+.box-card .card:hover .bottom ul li {
+    font-size: 20px;
+    color: white;
+}
+
+.box-card .card:hover .bottom a {
+    background-image: none;
+    background-color: white;
+    color: black;
+}
+
+.box-card .card:hover .bottom a span {
+    background: linear-gradient(to right, #9f900e, #e6001c);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box-card .card:hover .circle-right {
+    border-left: 2px solid white;
+}
+
+.box-card .card:hover .circle-left {
+    border-right: 2px solid white;
+}

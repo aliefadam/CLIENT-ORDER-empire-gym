@@ -1,0 +1,75 @@
+@import url("style.css");
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  padding: 10px 160px;
+  height: calc(100vh - 83px - 64px);
+}
+
+.box {
+  border: 1px solid black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .notification {
+  width: 50%;
+}
+
+.box .notification .top {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  height: 50px;
+  display: flex;
+  background-image: linear-gradient(to right, #e42128 50%, #ffed4a);
+}
+
+.box .notification .top .item {
+  flex: 1;
+}
+
+.box .notification .top .item img {
+  margin-left: 20px;
+  width: 30%;
+}
+
+.box .notification .top .item:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.box .notification .top .item:nth-child(2) {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .notification .top .item:nth-child(2) span {
+  color: white;
+}
+
+.box .notification .bottom {
+  height: 40px;
+  border: 1px solid var(--merah);
+}
+
+.box .notification a {
+  width: fit-content;
+  border: none;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 12px 70px;
+  background-color: var(--biru);
+  font-size: 20px;
+  transform: translateY(-20px);
+}

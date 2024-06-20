@@ -1,0 +1,117 @@
+@import url("style.css");
+
+main {
+  padding: 10px 160px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header .header-item {
+  margin-top: 10px;
+}
+
+header .header-item .top {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  padding: 16px 13px;
+  background-image: linear-gradient(to right, #e42128 50%, #ffed4a);
+}
+
+header .header-item .top span:first-child {
+  font-size: 24px;
+  color: white;
+}
+
+header .header-item .top span:nth-child(2) {
+  font-size: 24px;
+  color: white;
+}
+
+header .header-item .top span:last-child {
+  font-size: 20px;
+  color: white;
+}
+
+header .header-item .bottom {
+  padding: 13px;
+  border: 2px solid var(--merah);
+  font-size: 13px;
+}
+
+.metopem {
+  margin-top: 30px;
+  padding: 30px 150px;
+  border: 1px solid black;
+}
+
+.metopem h1 {
+  font-size: 20px;
+}
+
+.metopem .metopem-list {
+  margin-top: 20px;
+  border-top: 2px solid #e6e3e3;
+  border-right: 2px solid #e6e3e3;
+  border-left: 2px solid #e6e3e3;
+  border-radius: 7px;
+}
+
+.metopem .metopem-list .metopem-item {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  border-bottom: 2px solid #e6e3e3;
+}
+
+.metopem .metopem-list .metopem-item .left input {
+  transform: scale(1.1);
+}
+
+.metopem .metopem-list .metopem-item .right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.metopem .metopem-list .metopem-item .right label {
+  font-size: 16px;
+}
+
+.metopem .metopem-list .metopem-item .right img {
+  width: 300px;
+}
+
+.metopem .box-info {
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 3px;
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+.metopem .box-info img {
+  width: 50%;
+}
+
+.metopem .box-info span {
+  text-align: center;
+  font-size: 15px;
+}
+
+.metopem .box-info a {
+  display: block;
+  border: none;
+  background-color: #1ed760;
+  border-radius: 30px;
+  padding: 20px 30px;
+  font-size: 18px;
+}
